@@ -42,6 +42,11 @@ You can easily change your details through the `profileConfig` file. Here’s ho
    - Update the resume container with different versions of your resume 
    - Make the final update with "RESUME.pdf".
 
+3. **Update your pictures**
+   - Replace the profile image `src\assets\profile.png`
+   - Add your personal favourite image at `src\assets\setup.jpg`
+
+   
 ## Room for Improvement
 
 Here's what I'm planning to work on:

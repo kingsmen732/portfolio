@@ -19,8 +19,3 @@ export const resume = "Resume container/resume.pdf";
 
 
 
-
-
-// import resumeImage from '../assets/resume.svg';
-// import backgroundImage from '../assets/profile.png';
-// import setupImage from '../assets/dummy.jpg';
