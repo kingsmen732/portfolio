@@ -16,8 +16,8 @@ To get this project up and running on your local machine, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone <your-repo-link>
-   cd <your-repo-directory>
+   git clone https://github.com/kingsmen732/portfolio
+   cd portfolio-website
    ```
 
 2. **Install the dependencies:**
