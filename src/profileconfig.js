@@ -6,11 +6,12 @@ export const linkedin = "https://linkedin.com/in/mithilesh-babu";
 export const twitter = "https://x.com/Its_mrleo732";
 
 export const skills = [
-    "JavaScript",
-    "React",
-    "Node.js",
-    "CSS",
-    "HTML"
+    "Robotics Ringleader",
+    "Crazy Invention Creator",
+    "High Creativity Connoisseur",
+    "IoT Innovator",
+    "Prototyping Mastery",
+    "3D Design Dynamo"
 ];
 
 export const git = "../assets/github.svg";
