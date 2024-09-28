@@ -2,6 +2,9 @@
 ## Have a min to have a portfolio?! Here is your chance to make one
 ![image](https://github.com/user-attachments/assets/77a651d1-0da0-4472-8371-76cfda3d2844)
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new?repository=https://github.com/kingsmen732/portfolio)
+
+
 
 Hello there! Welcome to my new portfolio. This is your chance to get your last-minute savior bento-styled portfolio!
 
@@ -46,7 +49,7 @@ You can easily change your details through the `profileConfig` file. Here’s ho
    - Replace the profile image `src\assets\profile.png`
    - Add your personal favourite image at `src\assets\setup.jpg`
 
-   
+
 ## Room for Improvement
 
 Here's what I'm planning to work on:
