@@ -1,13 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
-import linkedInLogo from '../assets/linkedin.svg';
 import githubLogo from '../assets/github.svg';
+import linkedInLogo from '../assets/linkedin.svg';
 import xLogo from '../assets/x-logo.svg';
 import mailLogo from '../assets/mail.png';
 import experienceImage from '../assets/experience.svg';
 import resumeImage from '../assets/resume.svg';
 import backgroundImage from '../assets/profile.png';
-import setupImage from '../assets/dummy.jpg';
+import setupImage from '../assets/setup.jpg';
+import { email, github, linkedin, twitter , resume} from '../profileconfig';
 
 
 const BentoLayout = () => {
@@ -57,7 +58,7 @@ const BentoLayout = () => {
       </div>
 
       <div className="col-span-1 aspect-square rounded-xl border-transparent shadow-md overflow-hidden">
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+        <a href={resume} target="_blank" rel="noopener noreferrer">
           <img src={ resumeImage } alt="Resume" className="w-full h-full object-cover"/>
         </a>
       </div>
@@ -72,22 +73,22 @@ const BentoLayout = () => {
       </div>
 
       <div className="col-span-1 aspect-square rounded-xl border-transparent shadow-md overflow-hidden">
-        <a href="https://github.com/kingsmen732" target="_blank" rel="noopener noreferrer">
-          <img src={ githubLogo } alt="GitHub Logo" className="w-full h-full object-cover"/>
+        <a href={github} target="_blank" rel="noopener noreferrer">
+          <img src={githubLogo} alt="GitHub Logo" className="w-full h-full object-cover"/>
         </a>
       </div>
       <div className="col-span-1 aspect-square rounded-xl border-transparent shadow-md overflow-hidden">
-        <a href="https://www.linkedin.com/in/kiran-kumar-petlu-a8108829a/" target="_blank" rel="noopener noreferrer">
+        <a href={linkedin} target="_blank" rel="noopener noreferrer">
           <img src={ linkedInLogo } alt="LinkedIn Logo" className="w-full h-full object-cover"/>
         </a>
       </div>
       <div className="col-span-1 aspect-square rounded-xl border-transparent shadow-md overflow-hidden">
-        <a href="https://www.linkedin.com/in/kiran-kumar-petlu-a8108829a/" target="_blank" rel="noopener noreferrer">
+        <a href={twitter} target="_blank" rel="noopener noreferrer">
           <img src={ xLogo } alt="XTwitter" className="w-full h-full object-cover"/>
         </a>
       </div>
       <div className="col-span-1 aspect-square rounded-xl border-transparent shadow-md overflow-hidden">
-        <a href="mailto:kirankumarpetlu48@gmail.com">
+        <a href={`mailto:${email}`}>
           <img src={ mailLogo } alt="Mail Logo" className="w-full h-full object-cover"/>
         </a>
       </div>
