@@ -1,4 +1,4 @@
-# OSS Portfolio ~ Bento Style
+# Opensoruce Portfolio ~ Bento Style 
 ## Have a min to have a portfolio?! Here is your chance to make one
 ![image](https://github.com/user-attachments/assets/77a651d1-0da0-4472-8371-76cfda3d2844)
 
