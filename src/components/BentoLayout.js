@@ -8,7 +8,14 @@ import experienceImage from '../assets/experience.svg';
 import resumeImage from '../assets/resume.svg';
 import backgroundImage from '../assets/profile.png';
 import setupImage from '../assets/setup.jpg';
-import { email, github, linkedin, twitter , resume} from '../profileconfig';
+// import applemusicLogo from "../assets/appleMusic.svg";
+// import spotifyLogo from "../assets/spotify.svg";
+// import twitchLogo from "../assets/twitch.svg";
+// import leetcodeLogo from "../assets/leetcode.svg";
+// import figmaLogo from "../assets/figma.svg";
+// import discordLogo from "../assets/discord.svg";
+
+import { email, github, linkedin, twitter , resume, applemusic, spotify, twitch, leetcode, figma, discord } from '../profileconfig';
 
 
 const BentoLayout = () => {
