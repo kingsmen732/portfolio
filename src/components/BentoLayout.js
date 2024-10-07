@@ -139,7 +139,7 @@ const BentoLayout = () => {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 flex items-center justify-center text-3xl text-white font-bold z-10">
-              Projects
+                     
             </div>
           </button>
         </div>
