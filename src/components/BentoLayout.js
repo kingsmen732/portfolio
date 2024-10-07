@@ -76,7 +76,10 @@ const BentoLayout = () => {
       </div>
 
       <div className="col-span-1 aspect-square rounded-xl border-transparent shadow-md overflow-hidden">
-        <a href={resume} target="_blank" rel="noopener noreferrer">
+        <a href={resume} target="_blank" rel="noopener noreferrer" onClick={(e) => {
+          e.preventDefault();
+          window.open(resume, '_blank');
+        }}>
           <img src={ resumeImage } alt="Resume" className="w-full h-full object-cover"/>
         </a>
       </div>
