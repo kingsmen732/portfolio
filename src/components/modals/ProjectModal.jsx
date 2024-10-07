@@ -13,7 +13,7 @@ const ProjectModal = (props) => {
         
         {/* If you want to make the similar modals for others just change the content below and in other file and the above onclick function too :) */}
         <div className="text-2xl font-bold text-center border-b mx-10 pb-4">
-          My Projects
+          
         </div>
         <div className="p-5 mb-3">
 
