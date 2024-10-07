@@ -11,9 +11,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f9fafb; /* Light background */
+}
+
+h1, h2, h3 {
+  @apply text-gray-900; /* Tailwind utility for text color */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Add hover effect for links */
+a:hover {
+  @apply text-blue-500 underline; /* Tailwind utility for hover effect */
 }
