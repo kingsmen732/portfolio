@@ -1,10 +1,10 @@
-# Opensoruce Portfolio ~ Bento Style 
+# Opensoruce Portfolio ~ Bento Style
+
 ## Have a min to have a portfolio?! Here is your chance to make one
+
 ![image](https://github.com/user-attachments/assets/77a651d1-0da0-4472-8371-76cfda3d2844)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new?repository=https://github.com/kingsmen732/portfolio)
-
-
 
 Hello there! Welcome to my new portfolio. This is your chance to get your last-minute savior bento-styled portfolio!
 
@@ -15,12 +15,14 @@ This project was kick-started with [Create React App](https://github.com/faceboo
 To get this project up and running on your local machine, follow these steps:
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/kingsmen732/portfolio
    cd portfolio-website
    ```
 
 2. **Install the dependencies:**
+
    ```bash
    yarn install
    ```
@@ -38,17 +40,18 @@ To get this project up and running on your local machine, follow these steps:
 You can easily change your details through the `profileConfig` file. Here’s how:
 
 1. **Open the `profileConfig.js` file:**
+
    - Locate the file in the `src/config` directory.
    - Edit the links with your respective links.
 
 2. **Upload Resume**
-   - Update the resume container with different versions of your resume 
+
+   - Update the resume container with different versions of your resume
    - Make the final update with "RESUME.pdf".
 
 3. **Update your pictures**
    - Replace the profile image `src\assets\profile.png`
    - Add your personal favourite image at `src\assets\setup.jpg`
-
 
 ## Room for Improvement
 
@@ -62,3 +65,7 @@ Here's what I'm planning to work on:
 Feel free to fork this repository, create your own version, and contribute back with Pull Requests. Any help to make this better is greatly appreciated!
 
 Thanks for stopping by, and happy coding!
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.txt)
