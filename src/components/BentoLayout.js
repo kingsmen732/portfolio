@@ -4,10 +4,21 @@ import githubLogo from '../assets/github.svg';
 import linkedInLogo from '../assets/linkedin.svg';
 import xLogo from '../assets/x-logo.svg';
 import mailLogo from '../assets/mail.png';
-import experienceImage from '../assets/experience.svg';
 import resumeImage from '../assets/resume.svg';
 import backgroundImage from '../assets/profile.png';
 import setupImage from '../assets/setup.jpg';
+import fresherLogo from '../assets/experience/Fresher.svg';
+
+// import rookieLogo from '../assets/experience/Rookie.svg';
+// import intermediateLogo from '../assets/experience/Intermediate.svg';
+// import advancedLogo from '../assets/experience/Advanced.svg';
+// import oneyearLogo from '../assets/experience/+1.svg';
+// import twoyearLogo from '../assets/experience/+2.svg';
+// import threeyearLogo from '../assets/experience/+3.svg';
+// import fouryearLogo from '../assets/experience/+4.svg';
+// import fiveyearLogo from '../assets/experience/+5.svg';
+// import sixyearLogo from '../assets/experience/+6.svg'; 
+
 // import applemusicLogo from "../assets/appleMusic.svg";
 // import spotifyLogo from "../assets/spotify.svg";
 // import twitchLogo from "../assets/twitch.svg";
@@ -71,7 +82,7 @@ const BentoLayout = () => {
       </div>
 
       <div className="col-span-1 aspect-square rounded-xl border-transparent shadow-md overflow-hidden">
-        <img src={ experienceImage } alt="Experience" className="w-full h-full object-cover"/>
+        <img src={ fresherLogo } alt="Experience" className="w-full h-full object-cover"/>
       </div>
       <div
         className="col-span-1 sm:col-span-2 lg:col-span-4 aspect-square sm:aspect-[4/1] rounded-xl border-transparent shadow-md overflow-hidden"
