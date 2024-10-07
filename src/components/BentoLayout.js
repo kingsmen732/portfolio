@@ -76,7 +76,7 @@ const BentoLayout = () => {
       </div>
 
       <div className="col-span-1 aspect-square rounded-xl border-transparent shadow-md overflow-hidden">
-     <a href={resume} target="_blank" rel="noopener noreferrer" download>
+     <a href={resume} target="download" rel="noopener noreferrer" >
           <img src={ resumeImage } alt="Resume" className="w-full h-full object-cover"/>
         </a>
       </div>
