@@ -4,7 +4,7 @@
 
 ![image](https://github.com/user-attachments/assets/77a651d1-0da0-4472-8371-76cfda3d2844)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new?repository=https://github.com/kingsmen732/portfolio)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new?repository=https://github.com/kingsmen732/portfolio) ##Fork this into your GitHub so this deploy button works in your repo
 
 Hello there! Welcome to my new portfolio. This is your chance to get your last-minute savior bento-styled portfolio!
 
@@ -18,7 +18,7 @@ To get this project up and running on your local machine, follow these steps:
 
    ```bash
    git clone https://github.com/kingsmen732/portfolio
-   cd portfolio-website
+   cd portfolio
    ```
 
 2. **Install the dependencies:**
