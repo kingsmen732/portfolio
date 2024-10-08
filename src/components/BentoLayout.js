@@ -9,6 +9,23 @@ import backgroundImage from "../assets/profile.png";
 import setupImage from "../assets/setup.jpg";
 import fresherLogo from "../assets/experience/Fresher.svg";
 
+// import rookieLogo from '../assets/experience/Rookie.svg';
+// import intermediateLogo from '../assets/experience/Intermediate.svg';
+// import advancedLogo from '../assets/experience/Advanced.svg';
+// import oneyearLogo from '../assets/experience/+1.svg';
+// import twoyearLogo from '../assets/experience/+2.svg';
+// import threeyearLogo from '../assets/experience/+3.svg';
+// import fouryearLogo from '../assets/experience/+4.svg';
+// import fiveyearLogo from '../assets/experience/+5.svg';
+// import sixyearLogo from '../assets/experience/+6.svg';
+
+// import applemusicLogo from "../assets/appleMusic.svg";
+// import spotifyLogo from "../assets/spotify.svg";
+// import twitchLogo from "../assets/twitch.svg";
+// import leetcodeLogo from "../assets/leetcode.svg";
+// import figmaLogo from "../assets/figma.svg";
+// import discordLogo from "../assets/discord.svg";
+
 import { email, github, linkedin, twitter, resume } from "../profileconfig";
 import ProjectModal from "./modals/ProjectModal";
 
@@ -104,7 +121,7 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
           <button className="relative w-full h-full" onClick={() => setIsModalOpen(true)}>
             <img src={setupImage} alt="Setup" className="w-full h-full object-cover" />
             <div className="absolute inset-0 flex items-center justify-center text-3xl text-white font-bold z-10">
-              My Setup
+              
             </div>
           </button>
         </div>
