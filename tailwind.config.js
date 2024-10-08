@@ -11,7 +11,10 @@ module.exports = {
         medium: 500,
         light: 300,
         bold: 700
-      }
+      },
+      colors: {  // Use "colors" instead of "color"
+        white: "#ffffff",  // You can also use named color "white"
+      },
     },
   },
   plugins: [],

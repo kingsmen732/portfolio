@@ -28,6 +28,41 @@
   color: #61dafb;
 }
 
+/* App.css */
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light {
+  background-color: white;
+  color: white;
+}
+
+.dark {
+  background-color: #1a202c;
+}
+
+.dark a {
+  color: #81e6d9;
+}
+
+.light a {
+  color: #2d3748;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark .shadow-md {
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 4px 6px;
+}
+
+
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
