@@ -14,6 +14,9 @@ const project = [
         tech: ["Tech A", "Tech B", "Tech C", "Tech D", "Tech E", "Tech F", "Tech G"],
         githubLink: "https://www.google.com",
         liveLink: "https://www.google.com",
+        previewImages:["https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/64f8f63f2c8424ff96186592_64f21cb5ade0e3b3f3962956_PUZi8gXC0CwFZsfeGFln108eDAOcjjsXcc8EygOzeDNNx8qPxMT1LQ60vnNvvu0P436jceO3ccQL_uJvfEG5s3D3xM128PtzZWkOrOBdQq8B9h2kvuOjh8CmAHMLEtJxJeZRV5b8VglUy6Y6Dyk2bA.png",
+            "https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/64f8f63f2c8424ff9618659a_64f21cb68461d15cd4f036f4_9Yn-_IMAPwlsRjW_dY5XZnlKQRX9bSXCQ5ic4xkdrOo4sRMuVO3dT7fVymBt-s8_fC1hwxBkFGsioRl9QKl0R66pu3n1M5pu44LHY1WJn2oNEKXTJw8IP5UxJqkH8DT9QrAlRoObVFDKJG_P3yhAwQ.png","https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/64f8f63f2c8424ff9618658f_64f21cb5411912d5956135a1_hZy_Vhne-JBc6PTGZh89WV9SM3yw7ZxJisTagsjiGySvL-XUTov_2-rh3kcbx5gQJi_TEHwS_6AWdDTDrcC3rXVM1xt9YnzvyxivPh2tzs8eiOCTFT0Xo4OgZ9mGN9YMQFGOH8bmmau9C37VeEgmjA.png",
+            "https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/64f8f63f2c8424ff96186581_64f21d8cff70ded458e2734f_MmFu5esU5jOrjChj0nfr1Me5DFLtyr0MptBC_KL4eCdWrGkHRAJlaKdRUw1EvkbjLTXuy4kChmR8tRHaAz8UBU7AU5xODqhgizVv093veEzMUNbMHr1_I3EoAJ0-LBmUsQc5qebiNBCabbV8NY0DSw.jpeg"]
     },
     {
         name: "Project B",
@@ -30,6 +33,9 @@ const project = [
         tech: ["Tech H", "Tech I", "Tech J", "Tech K", "Tech L", "Tech M"],
         githubLink: "https://www.google.com",
         liveLink: "https://www.google.com",
+        previewImages:["https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/64f8f63f2c8424ff96186592_64f21cb5ade0e3b3f3962956_PUZi8gXC0CwFZsfeGFln108eDAOcjjsXcc8EygOzeDNNx8qPxMT1LQ60vnNvvu0P436jceO3ccQL_uJvfEG5s3D3xM128PtzZWkOrOBdQq8B9h2kvuOjh8CmAHMLEtJxJeZRV5b8VglUy6Y6Dyk2bA.png",
+            "https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/64f8f63f2c8424ff9618659a_64f21cb68461d15cd4f036f4_9Yn-_IMAPwlsRjW_dY5XZnlKQRX9bSXCQ5ic4xkdrOo4sRMuVO3dT7fVymBt-s8_fC1hwxBkFGsioRl9QKl0R66pu3n1M5pu44LHY1WJn2oNEKXTJw8IP5UxJqkH8DT9QrAlRoObVFDKJG_P3yhAwQ.png","https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/64f8f63f2c8424ff9618658f_64f21cb5411912d5956135a1_hZy_Vhne-JBc6PTGZh89WV9SM3yw7ZxJisTagsjiGySvL-XUTov_2-rh3kcbx5gQJi_TEHwS_6AWdDTDrcC3rXVM1xt9YnzvyxivPh2tzs8eiOCTFT0Xo4OgZ9mGN9YMQFGOH8bmmau9C37VeEgmjA.png",
+            "https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/64f8f63f2c8424ff96186581_64f21d8cff70ded458e2734f_MmFu5esU5jOrjChj0nfr1Me5DFLtyr0MptBC_KL4eCdWrGkHRAJlaKdRUw1EvkbjLTXuy4kChmR8tRHaAz8UBU7AU5xODqhgizVv093veEzMUNbMHr1_I3EoAJ0-LBmUsQc5qebiNBCabbV8NY0DSw.jpeg"]
     }
 ]
 
