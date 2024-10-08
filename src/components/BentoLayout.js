@@ -89,9 +89,9 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
         className="p-3 px-4 bg-gray-800 text-white rounded-md fixed top-4 right-4"
       >
         {isDarkMode ? (
-          <i className="fas fa-sun"></i> // Light Mode icon (Sun)
+          <i className="fas fa-sun"></i> // Light Mode icon (Sun icon)
         ) : (
-          <i className="fas fa-moon"></i> // Dark Mode icon (Moon)
+          <i className="fas fa-moon"></i> // Dark Mode icon (Moon icon)
         )}
       </button>
 
