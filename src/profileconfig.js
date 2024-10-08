@@ -20,7 +20,7 @@ export const skills = [
     "3D Design Dynamo"
 ];
 
-export const resume = "./resume.pdf";
+export const resume = "./Resume.pdf"; //resume is working fine now
 
 
 
