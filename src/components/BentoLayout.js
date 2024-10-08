@@ -86,9 +86,13 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
       {/* Dark/Light Mode Toggle Button */}
       <button
         onClick={toggleDarkMode}
-        className="p-2 bg-gray-800 text-white rounded-md fixed top-4 right-4"
+        className="p-3 px-4 bg-gray-800 text-white rounded-md fixed top-4 right-4"
       >
-        {isDarkMode ? "Light Mode" : "Dark Mode"}
+        {isDarkMode ? (
+          <i className="fas fa-sun"></i> // Light Mode icon (Sun)
+        ) : (
+          <i className="fas fa-moon"></i> // Dark Mode icon (Moon)
+        )}
       </button>
 
       <div ref={gridRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
