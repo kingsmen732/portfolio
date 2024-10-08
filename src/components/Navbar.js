@@ -8,7 +8,7 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
     const handleClick = () => setClick(!click)
     return (
         <>
-            <div className={`w-full hidden pr-4 py-2 justify-end gap-x-4 lg:flex fixed items-center ${isDarkMode ? 'text-white' : ''}`}>
+            <div className={`w-full hidden pr-4 py-2 justify-end gap-x-4 lg:flex fixed items-center ${isDarkMode ? 'text-white bg-gray-900' : 'bg-white'}`}>
 
                 <span className='cursor-pointer hover:text-gray-600'>About Me</span>
                 <span className='cursor-pointer hover:text-gray-600'>Projects</span>
