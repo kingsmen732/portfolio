@@ -83,13 +83,7 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
 
   return (
     <div className={`app-container ${isDarkMode ? "dark" : "light"}`}>
-      {/* Dark/Light Mode Toggle Button */}
-      <button
-        onClick={toggleDarkMode}
-        className="p-2 bg-gray-800 text-white rounded-md fixed top-4 right-4"
-      >
-        {isDarkMode ? "Light Mode" : "Dark Mode"}
-      </button>
+
 
       <div ref={gridRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
         {/* Profile Image */}
@@ -121,7 +115,7 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
           <button className="relative w-full h-full" onClick={() => setIsModalOpen(true)}>
             <img src={setupImage} alt="Setup" className="w-full h-full object-cover" />
             <div className="absolute inset-0 flex items-center justify-center text-3xl text-white font-bold z-10">
-              
+
             </div>
           </button>
         </div>
