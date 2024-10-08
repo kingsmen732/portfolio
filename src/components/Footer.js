@@ -4,7 +4,7 @@ const getCurrentYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <div className="text-gray-800">
+    <div>
       <p className="text-base lg:text-lg">
         &copy; {getCurrentYear} kingsmen734
       </p>
