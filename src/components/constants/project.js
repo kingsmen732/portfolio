@@ -1,7 +1,7 @@
 const project = [
     {
         name: "Project A",
-        logo: "https://i.ibb.co/r0JYTN4/image.png",
+        logo: "https://i.ibb.co/r41nZkd/image.png",
         briefDesc: "An innovative platform for sharing thoughts and ideas.",
         desc: [
             "Project A is a unique space where users can express their creativity and connect with like-minded individuals.",
