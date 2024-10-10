@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import BentoLayout from './BentoLayout';
 import ProfileSidebar from './ProfileSidebar';
 import Footer from './Footer';
+import NavBar from './Navbar'; // Import NavBar component
 
 const MainContainer = () => {
   // Lift dark mode state to MainContainer
@@ -14,6 +15,9 @@ const MainContainer = () => {
 
   return (
     <div className={`flex flex-col justify-center items-center min-h-screen ${isDarkMode ? 'bg-gray-900 text-white' : 'text-black'} px-4 lg:px-20`}>
+      
+      {/* NavBar */}
+      <NavBar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
 
       <div className="flex flex-col lg:flex-row w-full max-w-8xl mx-auto gap-4">
         {/* Profile Sidebar */}
