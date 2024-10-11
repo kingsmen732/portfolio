@@ -32,7 +32,7 @@ export const name = [
 //      "MB"
 // ];
 
-export const resume = "Resume container/resume.pdf";
+export const resume = "./Resume.pdf"; //resume is working fine now
 
 
 
