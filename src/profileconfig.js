@@ -27,10 +27,6 @@ export const skills = [
 export const name = [
     "Mithilesh",
 ];
-// export const fname =[
-//     "Mithilesh Babu",
-//      "MB"
-// ];
 
 export const resume = "./Resume.pdf"; //resume is working fine now
 
