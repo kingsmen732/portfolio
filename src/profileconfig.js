@@ -1,4 +1,4 @@
-export const name = "Mithilesh";
+
 export const title = "Founder of this Repo";
 export const email = "Mitumithilesh2@gmail.com";
 export const github = "https://github.com/kingsmen732";
@@ -13,12 +13,24 @@ export const discord = "https://discord.com/users/kingmen732";
 
 export const skills = [
     "Robotics Ringleader",
+    1000,
     "Crazy Invention Creator",
+    1000,
     "High Creativity Connoisseur",
+    1000,
     "IoT Innovator",
+    1000,
     "Prototyping Mastery",
+    1000,
     "3D Design Dynamo"
 ];
+export const name = [
+    "Mithilesh",
+];
+// export const fname =[
+//     "Mithilesh Babu",
+//      "MB"
+// ];
 
 export const resume = "Resume container/resume.pdf";
 
