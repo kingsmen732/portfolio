@@ -162,7 +162,7 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
       {/* Project Modal */}
       {isModalOpen && (
         <div className="flex flex-col md:flex-row gap-10">
-          <ProjectModal setIsModalOpen={setIsModalOpen} />
+          <ProjectModal setIsModalOpen={setIsModalOpen} mode={isDarkMode} />
         </div>
       )}
     </div>
