@@ -7,7 +7,7 @@ import { Autoplay, FreeMode } from 'swiper/modules';
 import "swiper/css";
 import "swiper/css/free-mode";
 
-const Project = ({ proj, index }) => {
+const Project = React.memo(({ proj, index }) => {
   const [preview, setPreview] = useState(false);
 
   return (
@@ -16,19 +16,16 @@ const Project = ({ proj, index }) => {
       className="border relative p-6 m-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white"
     >
       <div className="flex flex-col md:flex-row justify-between gap-4 items-center">
-        {/* Project Logo */}
         <img
           src={proj.logo}
           alt={`${proj.name} Logo`}
           className="w-20 h-20 md:w-24 md:h-24 object-cover"
         />
 
-        {/* Project Name */}
         <div className="text-2xl font-semibold text-gray-800">
           {proj.name}
         </div>
 
-        {/* GitHub and Live Links */}
         <div className="flex flex-row gap-4">
           <a
             href={proj.githubLink}
@@ -57,10 +54,8 @@ const Project = ({ proj, index }) => {
         </div>
       </div>
 
-      {/* Brief Description */}
       <p className="italic text-gray-600 mt-4">{proj.briefDesc}</p>
 
-      {/* Description */}
       <h3 className="font-bold mt-4 text-gray-700">Description:</h3>
       <ul className="list-disc list-inside text-gray-600">
         {proj.desc.map((item, idx) => (
@@ -68,7 +63,6 @@ const Project = ({ proj, index }) => {
         ))}
       </ul>
 
-      {/* Technologies */}
       <h3 className="font-bold mt-4 text-gray-700">Technologies:</h3>
       <p className="flex justify-between items-center text-gray-600">
         <span>{proj.tech.join(", ")}</span>
@@ -80,11 +74,9 @@ const Project = ({ proj, index }) => {
         </button>
       </p>
 
-      {/* Modal for Project Preview */}
       {preview && (
         <div className="absolute top-0 left-0 right-0 bottom-0 z-50 flex justify-center items-center bg-black bg-opacity-50">
           <div className="bg-white shadow-xl rounded-lg p-8 relative max-w-3xl w-full">
-            {/* Close Button */}
             <img
               src={cross}
               alt="Close"
@@ -92,17 +84,15 @@ const Project = ({ proj, index }) => {
               onClick={() => setPreview(false)}
             />
 
-            {/* Modal Title */}
             <h2 className="text-2xl font-semibold text-gray-800">{proj.name} Preview</h2>
 
-            {/* Swiper for Preview Images */}
             <Swiper
               slidesPerView={1}
               spaceBetween={25}
-              loop={true}
+              loop={false}  
               freeMode={true}
               autoplay={{
-                delay: 2500,
+                delay: 3000,
                 disableOnInteraction: false,
               }}
               modules={[FreeMode, Autoplay]}
@@ -112,8 +102,9 @@ const Project = ({ proj, index }) => {
                 <SwiperSlide key={idx}>
                   <img
                     src={img}
-                    className="w-full h-auto rounded-lg object-cover"
+                    className="w-full h-auto rounded-lg object-cover lazy-load"  // Lazy load images
                     alt={`Preview ${idx}`}
+                    loading="lazy"
                   />
                 </SwiperSlide>
               ))}
@@ -123,6 +114,6 @@ const Project = ({ proj, index }) => {
       )}
     </div>
   );
-}
+});
 
 export default Project;
