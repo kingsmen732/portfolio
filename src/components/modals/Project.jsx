@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import githubLogo from "../../assets/github.svg";
 import siteLogo from "../../assets/internet.svg";
 import cross from "../../assets/cross.svg";
@@ -81,44 +81,46 @@ const Project = ({ proj, index }) => {
       </p>
 
       {/* Modal for Project Preview */}
-      <div
-        className={`bg-white shadow-xl rounded-lg p-8 fixed inset-0 z-50 overflow-auto transform transition-transform duration-500 ease-in-out ${preview ? "scale-100 opacity-100" : "scale-0 opacity-0"} flex flex-col items-center gap-6`}
-      >
-        {/* Close Button */}
-        <img
-          src={cross}
-          alt="Close"
-          className="absolute top-5 right-5 w-6 h-6 cursor-pointer hover:scale-110 transition-transform"
-          onClick={() => setPreview(false)}
-        />
+      {preview && (
+        <div className="absolute top-0 left-0 right-0 bottom-0 z-50 flex justify-center items-center bg-black bg-opacity-50">
+          <div className="bg-white shadow-xl rounded-lg p-8 relative max-w-3xl w-full">
+            {/* Close Button */}
+            <img
+              src={cross}
+              alt="Close"
+              className="absolute top-5 right-5 w-6 h-6 cursor-pointer hover:scale-110 transition-transform"
+              onClick={() => setPreview(false)}
+            />
 
-        {/* Modal Title */}
-        <h2 className="text-2xl font-semibold text-gray-800">{proj.name} Preview</h2>
+            {/* Modal Title */}
+            <h2 className="text-2xl font-semibold text-gray-800">{proj.name} Preview</h2>
 
-        {/* Swiper for Preview Images */}
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={25}
-          loop={true}
-          freeMode={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          modules={[FreeMode, Autoplay]}
-          className="w-full max-w-3xl"
-        >
-          {proj.previewImages.map((img, idx) => (
-            <SwiperSlide key={idx}>
-              <img
-                src={img}
-                className="w-full h-auto rounded-lg object-cover"
-                alt={`Preview ${idx}`}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+            {/* Swiper for Preview Images */}
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={25}
+              loop={true}
+              freeMode={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              modules={[FreeMode, Autoplay]}
+              className="w-full"
+            >
+              {proj.previewImages.map((img, idx) => (
+                <SwiperSlide key={idx}>
+                  <img
+                    src={img}
+                    className="w-full h-auto rounded-lg object-cover"
+                    alt={`Preview ${idx}`}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
