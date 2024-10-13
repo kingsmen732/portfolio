@@ -86,7 +86,7 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
       {/* Dark/Light Mode Toggle Button */}
       <button
         onClick={toggleDarkMode}
-        className="p-3 px-4 bg-gray-800 text-white rounded-md fixed top-4 right-4"
+        className="p-3 px-4 bg-gray-800 text-white rounded-md fixed top-4 right-4 z-50"
       >
         {isDarkMode ? (
           <i className="fas fa-sun"></i> // Light Mode icon (Sun icon)
@@ -105,7 +105,7 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
             backgroundPosition: "center",
           }}
         >
-          <span className="text-xl lg:text-4xl text-black dark:text-white font-bold">Who Am I?</span>
+          <span className="text-xl lg:text-4xl font-bold">Who Am I?</span>
         </div>
 
         {/* Resume */}
@@ -162,7 +162,7 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
       {/* Project Modal */}
       {isModalOpen && (
         <div className="flex flex-col md:flex-row gap-10">
-          <ProjectModal setIsModalOpen={setIsModalOpen} />
+          <ProjectModal setIsModalOpen={setIsModalOpen} mode={isDarkMode} />
         </div>
       )}
     </div>
