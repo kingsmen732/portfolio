@@ -12,6 +12,22 @@ import contactme from '../assets/contact.jpg'
 import { email, github, linkedin, twitter, resume } from "../profileconfig";
 import ProjectModal from "./modals/ProjectModal";
 import ContactModal from "./modals/ContactModal";
+// import rookieLogo from '../assets/experience/Rookie.svg';
+// import intermediateLogo from '../assets/experience/Intermediate.svg';
+// import advancedLogo from '../assets/experience/Advanced.svg';
+// import oneyearLogo from '../assets/experience/+1.svg';
+// import twoyearLogo from '../assets/experience/+2.svg';
+// import threeyearLogo from '../assets/experience/+3.svg';
+// import fouryearLogo from '../assets/experience/+4.svg';
+// import fiveyearLogo from '../assets/experience/+5.svg';
+// import sixyearLogo from '../assets/experience/+6.svg';
+
+// import applemusicLogo from "../assets/appleMusic.svg";
+// import spotifyLogo from "../assets/spotify.svg";
+// import twitchLogo from "../assets/twitch.svg";
+// import leetcodeLogo from "../assets/leetcode.svg";
+// import figmaLogo from "../assets/figma.svg";
+// import discordLogo from "../assets/discord.svg";
 
 const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
