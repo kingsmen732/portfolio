@@ -84,7 +84,7 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
             backgroundPosition: "center",
           }}
         >
-          <span className="text-xl lg:text-4xl text-black dark:text-white font-bold">Who Am I?</span>
+          <span className="text-xl lg:text-4xl font-bold">Who Am I?</span>
         </div>
 
         {/* Resume */}
@@ -163,7 +163,7 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
       </div>
 
       {/* Project Modal */}
-      {isModalOpen && <ProjectModal onClose={() => setIsModalOpen(false)} />}
+      {isModalOpen && <ProjectModal onClose={() => setIsModalOpen(false)} mode={isDarkMode} />}
     </div>
   );
 };
