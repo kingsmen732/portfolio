@@ -1,47 +1,3 @@
-// import React, { useState } from 'react';
-// import BentoLayout from './BentoLayout';
-// import ProfileSidebar from './ProfileSidebar';
-// import Footer from './Footer';
-// import AwesomeSlider from 'react-awesome-slider';
-// import 'react-awesome-slider/dist/styles.css';
-// import Education from './EducationSection';
-// const Slider = () => {
-//     const [isDarkMode, setIsDarkMode] = useState(false);
-
-//     const toggleDarkMode = () => {
-//         setIsDarkMode(!isDarkMode);
-//     };
-
-//     return (
-//         <AwesomeSlider className="awesome-slider" style={{ height: '100vh', overflow: 'hidden' }}>
-//             <div className={`flex flex-col justify-center items-center h-full ${isDarkMode ? 'bg-gray-900 text-white' : 'text-black'} px-4 lg:px-20`}>
-//                 <div className="flex flex-col lg:flex-row w-full max-w-8xl mx-auto gap-4">
-//                     <div className="flex-1 min-w-[300px] rounded-lg p-6 overflow-hidden">
-//                         <ProfileSidebar isDarkMode={isDarkMode} />
-//                     </div>
-//                     <div className="flex-1 min-w-[300px] rounded-lg p-6 overflow-hidden">
-//                         <BentoLayout isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-//                     </div>
-//                 </div>
-//                 <div className="my-5 lg:my-0">
-//                     <Footer />
-//                 </div>
-//             </div>
-//             <div>
-//                 <Education />
-//             </div>
-//         </AwesomeSlider>
-//     );
-// };
-
-// export default Slider;
-
-
-
-
-
-
-
 import React, { useState } from 'react';
 import BentoLayout from './BentoLayout';
 import ProfileSidebar from './ProfileSidebar';
@@ -58,24 +14,32 @@ const Slider = () => {
     };
 
     return (
-        <AwesomeSlider 
-            className="awesome-slider" 
-            style={{ height: '100vh', overflow: 'hidden' }} 
+        <AwesomeSlider
+            className="awesome-slider"
+            style={{ height: '100vh', overflow: 'hidden' }} // keep overflow hidden
+            mobileTouch={true}
+            bullets={false}
         >
-            <div className={`flex flex-col justify-center items-center h-full ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'} px-4 lg:px-20`}>
-                <div className="flex flex-col lg:flex-row w-full max-w-8xl mx-auto gap-4">
-                    <div className="flex-1 min-w-[300px] rounded-lg p-6 overflow-hidden">
+            {/* First slide: Profile Sidebar and BentoLayout */}
+            <div className={`flex flex-col justify-between h-full w-full ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'} px-4 lg:px-20 overflow-y-auto`}>
+                <div className="flex flex-col lg:flex-row w-full items-center max-w-7xl mx-auto gap-4 flex-grow">
+                    {/* Profile Sidebar */}
+                    <div className="flex-1 min-w-[280px] lg:min-w-[300px] rounded-lg p-4 lg:p-6">
                         <ProfileSidebar isDarkMode={isDarkMode} />
                     </div>
-                    <div className="flex-1 min-w-[300px] rounded-lg p-6 overflow-hidden">
+                    {/* BentoLayout */}
+                    <div className="flex-1 min-w-[280px] lg:min-w-[300px] rounded-lg p-4 lg:p-6 flex-grow">
                         <BentoLayout isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
                     </div>
                 </div>
-                <div className="my-5 lg:my-0">
+                {/* Footer */}
+                <div className="my-4 lg:my-6">
                     <Footer />
                 </div>
             </div>
-            <div>
+
+            {/* Second slide: Education Section */}
+            <div className={`flex justify-center items-center h-full w-full ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
                 <Education isDarkMode={isDarkMode} />
             </div>
         </AwesomeSlider>
