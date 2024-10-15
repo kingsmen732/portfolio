@@ -7,6 +7,7 @@ const ContactMeForm = () => {
         message: "",
     });
 
+    const formId = process.env.REACT_APP_FORMSPARK_FORM_ID
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -15,15 +16,12 @@ const ContactMeForm = () => {
         });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Form Submitted", formData);
-    };
 
     return (
-        <div id=" contact" className="w-full max-w-xl m-8">
+        <div id="contact" className="w-full max-w-xl m-8">
+            <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form action={`https://submit-form.com/${formId}`} className="space-y-4">
                 <div className="form-group">
                     <label htmlFor="name" className="block text-lg">Name:</label>
                     <input
@@ -68,8 +66,6 @@ const ContactMeForm = () => {
                 </button>
             </form>
         </div>
-
-
     );
 };
 
