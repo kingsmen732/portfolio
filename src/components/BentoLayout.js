@@ -8,7 +8,10 @@ import resumeImage from "../assets/resume.svg";
 import backgroundImage from "../assets/profile.png";
 import setupImage from "../assets/setup.jpg";
 import fresherLogo from "../assets/experience/Fresher.svg";
-
+import contactme from '../assets/contact.jpg'
+import { email, github, linkedin, twitter, resume } from "../profileconfig";
+import ProjectModal from "./modals/ProjectModal";
+import ContactModal from "./modals/ContactModal";
 // import rookieLogo from '../assets/experience/Rookie.svg';
 // import intermediateLogo from '../assets/experience/Intermediate.svg';
 // import advancedLogo from '../assets/experience/Advanced.svg';
@@ -26,13 +29,11 @@ import fresherLogo from "../assets/experience/Fresher.svg";
 // import figmaLogo from "../assets/figma.svg";
 // import discordLogo from "../assets/discord.svg";
 
-import { email, github, linkedin, twitter, resume } from "../profileconfig";
-import ProjectModal from "./modals/ProjectModal";
-
 const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const gridRef = useRef(null);
   const [animationDone, setAnimationDone] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false)
 
   // GSAP animation for grid items on mount
   useEffect(() => {
@@ -124,9 +125,7 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
         <div className="col-span-1 sm:col-span-2 lg:col-span-4 aspect-square sm:aspect-[4/1] rounded-xl border-transparent shadow-md overflow-hidden">
           <button className="relative w-full h-full" onClick={() => setIsModalOpen(true)}>
             <img src={setupImage} alt="Setup" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 flex items-center justify-center text-3xl text-white font-bold z-10">
-              
-            </div>
+            <div className="absolute inset-0 flex items-center justify-center text-3xl text-white font-bold z-10"></div>
           </button>
         </div>
 
@@ -157,6 +156,11 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
             <img src={mailLogo} alt="Mail Logo" className="w-full h-full object-cover" />
           </a>
         </div>
+
+        {/* Contact me */}
+        <div className="col-span-1 sm:col-span-2 lg:col-span-4 rounded-xl border-transparent shadow-md overflow-hidden cursor-pointer" onClick={() => setContactOpen(true)}>
+          <img src={contactme} />
+        </div>
       </div>
 
       {/* Project Modal */}
@@ -165,6 +169,15 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
           <ProjectModal setIsModalOpen={setIsModalOpen} mode={isDarkMode} />
         </div>
       )}
+
+      {/*Contact form*/}
+      {contactOpen && (
+        <div className="flex flex-col md:flex-row gap-10">
+          <ContactModal setContactOpen={setContactOpen} mode={isDarkMode} />
+        </div>
+
+      )}
+
     </div>
   );
 };
