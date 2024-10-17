@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import PropTypes from 'prop-types';
 import { gsap } from "gsap";
 import githubLogo from "../assets/github.svg";
 import linkedInLogo from "../assets/linkedin.svg";
@@ -89,6 +90,7 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
         onClick={toggleDarkMode}
         className="p-3 px-4 bg-gray-800 text-white rounded-md fixed top-4 right-4 z-50"
       >
+        
         {isDarkMode ? (
           <i className="fas fa-sun"></i> // Light Mode icon (Sun icon)
         ) : (
@@ -181,5 +183,10 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
     </div>
   );
 };
+BentoLayout.propTypes = {
+  isDarkMode: PropTypes.bool.isRequired,
+  toggleDarkMode: PropTypes.func.isRequired,
+};
 
+// BentoLayout.propTypes = {  
 export default BentoLayout;
