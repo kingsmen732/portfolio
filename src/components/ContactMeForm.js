@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { contactFormsparkId as formId } from "../profileconfig";
 const ContactMeForm = () => {
     const [formData, setFormData] = useState({
         name: "",
@@ -7,7 +7,6 @@ const ContactMeForm = () => {
         message: "",
     });
 
-    const formId = process.env.REACT_APP_FORMSPARK_FORM_ID
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -19,7 +18,6 @@ const ContactMeForm = () => {
 
     return (
         <div id="contact" className="w-full max-w-xl m-8">
-            <h2 className="text-2xl font-bold mb-4">Contact Me</h2>
 
             <form action={`https://submit-form.com/${formId}`} className="space-y-4">
                 <div className="form-group">
